@@ -4,12 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/SolarDroneTech/", // 👈 replace with your GitHub repo name
+  base: "/", // ✅ root path for Vercel
   server: {
     host: "::",
     port: 8080,
     hmr: {
-      overlay: false, // 👈 disable red error overlay
+      overlay: false, // disable red error overlay
     },
   },
   plugins: [
